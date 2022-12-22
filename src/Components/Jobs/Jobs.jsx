@@ -5,7 +5,7 @@ import { Row, Form } from 'react-bootstrap';
 import styled from 'styled-components';
 import Loading from '../Loading/Loading';
 
-function Jobs(){
+function Jobs({login}){
     const [jobs, setJobs] = useState([])
     const [isLoading, setIsLoading] = useState(true)
     const [buscar] = useState('Senior Director')
@@ -41,7 +41,7 @@ function Jobs(){
         <div >
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Row>
-                {jobs.map(job => <Job key={job.id} {...job.data()} id={job.id} />)}
+                {jobs.map(job => <Job login={login} key={job.id} {...job.data()} id={job.id} />)}
                 </Row>
             </Form.Group>       
             </div>

@@ -19,7 +19,7 @@ function NavBar({login}){
               <Nav.Link as={Link} to="/">Featured Jobs</Nav.Link>
               <Nav.Link as={Link} to="/register">Register</Nav.Link>
               <Nav.Link as={Link} to="/login">Login</Nav.Link>
-              <Nav.Link as={Link} to="/morejobs">More Jobs</Nav.Link>
+              {/* <Nav.Link as={Link} to="/morejobs">More Jobs</Nav.Link> */}
               <Nav.Link as={Link} to="/events">Events</Nav.Link>
               </>
             }
@@ -30,7 +30,7 @@ function NavBar({login}){
               <Nav.Link as={Link} to="/">Featured Jobs</Nav.Link>
               <Nav.Link as={Link} to="/register">Register</Nav.Link>
               <Nav.Link as={Link} to="/login">Login</Nav.Link>
-              <Nav.Link as={Link} to="/morejobs">More Jobs</Nav.Link>
+              {/* <Nav.Link as={Link} to="/morejobs">More Jobs</Nav.Link> */}
               <Nav.Link as={Link} to="/events">Events</Nav.Link>
               <NavDropdown title="Company Portal" id="basic-nav-dropdown">
               <NavDropdown.Item as={Link} to="/job/upload">Upload New Job</NavDropdown.Item></NavDropdown>

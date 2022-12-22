@@ -23,6 +23,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "client-s3-deploy": "aws s3 sync build/ s3://tecnyfi-test-s3",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

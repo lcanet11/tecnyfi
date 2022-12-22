@@ -10,11 +10,11 @@ import JobEdit from '../Pages/JobEdit';
 import Events from '../Pages/Events';
 import React from 'react';
 
-function Public({setLogin}){
+function Public({setLogin,login}){
   return(
     <Routes>   
-      <Route path='/' element={<Home />} />
-      <Route path='/morejobs' element={<MoreJobs/>} />
+      <Route path='/' element={<Home login={login} />} />
+      {/* <Route path='/morejobs' element={<MoreJobs/>} /> */}
       <Route path='/events' element={<Events/>} />
       <Route path='/register' element={<Register />} />
       <Route path='/login' element={<Login setLogin={setLogin} />} />

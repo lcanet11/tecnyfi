@@ -2,12 +2,12 @@ import React from 'react';
 import Jobs from '../Components/Jobs/Jobs';
 import firebase from '../Config/firebase'
 
-function Home(){
+function Home({login}){
   console.log(firebase)
   return(
     <>
       <div>
-        <Jobs />
+        <Jobs login={login} />
       </div>
     </>
   )

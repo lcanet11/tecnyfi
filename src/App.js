@@ -14,7 +14,7 @@ function App() {
     <Router>
       <NavBar login={login} />
         <Container>
-          <Public setLogin={setLogin} />
+          <Public setLogin={setLogin} login={login} />
         </Container>
     </Router>
    </div>

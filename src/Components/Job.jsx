@@ -21,7 +21,8 @@ function Job({
     description,
     requirements,
     benefits,
-    link
+    link, 
+    login
 }){
 
     return(
@@ -37,7 +38,11 @@ function Job({
                         {snippet}
                     </Card.Text>
                     <Button style={styles.buttons} as={Link} to={`/job/${id}`} variant="primary">See Details</Button>
-                    <Button styles={styles.buttons} as={Link} to={`/job/edit/${id}`} variant="primary">Edit</Button>
+
+                    {login && 
+                        <Button styles={styles.buttons} as={Link} to={`/job/edit/${id}`} variant="primary">Edit</Button>
+                    }
+                    
                 </Card.Body>
             </Card>
         </Col>
